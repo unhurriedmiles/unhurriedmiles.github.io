@@ -10,24 +10,11 @@ Standalone Jekyll user site for `https://unhurriedmiles.github.io/`.
 - Navigation and internal links stay within this site. The only external link included is the sitter's TrustedHousesitters profile, using its clean profile URL.
 - The generated `_site` directory was not copied.
 
-## Source inventory reviewed
+## Contact form
 
-Source `dev` branch of `Abster101/Abster101.github.io`:
+The house- and pet-sitting form on `/travel/#contact-sitter` uses the Basic HTML Formspree integration and submits via POST to `https://formspree.io/f/xzerprrn`. The personal email address is not included in the public page markup. CAPTCHA is not disabled in the form HTML; review and configure spam protection in the Formspree dashboard. Form submissions and processing are handled by Formspree under its service and privacy terms. Test with a non-sensitive message before relying on delivery.
 
-- `travel/index.html`: travel journal, slow living, June 2026 monthly recap, Croatia highlights, destinations, featured entries, and a sitter section plus request form.
-- `travel/august-2026.html`: August 2026 recap about Quebec, Maine, outdoor activities, routines, and reflections.
-- `index.html`: professional homepage's Travel and House & Pet Sitting sections.
-- `_layouts/default.html`: Travel navigation item.
-- `about/index.md`: house- and pet-sitting mention in the Contact section.
-- `css/main.css`: travel, journal, pet-sitting, and form styling mixed with professional-site styles.
-- `images/travel/`: `Croatia1.jpg`, `Croatia2.jpg`, `Croatia_nature1.jpg`, `Croatia_nature2.jpg`, and `kenzie1.png`.
-- Other referenced art: `images/spain-mountains.svg` and `images/IMG_5935.CR2.jpg` (the latter's source is under `images/originals/`).
-
-## Items requiring review before being added
-
-- The source publishes the personal email `abiola.ace1@gmail.com`; the house-sitting form posts to `https://formsubmit.co/abiola.ace1@gmail.com`. Neither the address nor a working form endpoint is included in this migration. Confirm the desired contact address and endpoint before adding a form or email link.
-- The TrustedHousesitters profile link is retained without source-account, employer, or tracking links. Confirm that the profile should remain public.
-- The source journal includes planned destinations and personal itinerary context; review it for time-sensitive details before adding further entries.
+The TrustedHousesitters profile link is retained without source-account, employer, or tracking links. Confirm that the profile should remain public.
 
 ## Migration limitations and validation
 
